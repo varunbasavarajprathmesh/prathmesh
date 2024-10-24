@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.cart-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.item-details {
+    margin-left: 10px;
+}
+
+.remove-btn {
+    background-color: #e7e9ec;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #d1d1d1;
+}
+
+.total {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.checkout-btn {
+    background-color: #ffa41c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.checkout-btn:hover {
+    background-color: #ff8c00;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+    </header>
+    <div class="cart-container">
+        <div class="cart-item">
+            <img src="nike.jpg" alt="Nike Air-Force-1" width="100" height="100">
+            <div class="item-details">
+                <h2>Nike Air-Force-1</h2>
+                <p>$19.99</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="nikee.jpg" alt="Nike Panda-Dunks" width="100" height="100">
+            <div class="item-details">
+                <h2>Nike Panda-Dunks</h2>
+                <p>$29.99</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="nike 90.jpg" alt="Nike Air Max 90" width="100" height="100">
+            <div class="item-details">
+                <h2>Nike Air Max 90</h2>
+                <p>$29.99</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="cart-item">
+            <img src="nike 1.jpg" alt="Nike Air Max 1" width="100" height="100">
+            <div class="item-details">
+                <h2>Nike Air Max 1</h2>
+                <p>$29.99</p>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+    </div>
+    <div class="total">
+        <h2>Total: $49.98</h2>
+    </div>
+    <button class="checkout-btn">Proceed to Checkout</button>
+
+    
+</body>
+</html>
